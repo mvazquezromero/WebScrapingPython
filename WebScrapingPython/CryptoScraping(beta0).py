@@ -11,7 +11,7 @@ soup = BeautifulSoup(r.content, "lxml")
 def imprimirPrecio():
     #Precio del dia#
     crypto_price = soup.find('div',class_="price-large").text
-    #CRYPTO + ISO#
+    #CRYPTO + TICKER#
     crypto = soup.find('li',class_ ="breadcrumbs-item active").text
     coin = soup.find('span',class_ ="coin-iso").text
     alltime_max = soup.find('div',class_ ="price-small")
