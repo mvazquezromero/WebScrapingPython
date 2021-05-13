@@ -19,15 +19,7 @@ def imprimirPrecio():
     print(f"{crypto}, {coin}: Su precio actual es: {crypto_price} ")  
     print()
 
-def finalRepetitivo():
-    #El Usuario puede repetir la consulta a la misma crypto las veces solicitadas
-    input("Presione enter para actualizar...")
-    imprimirPrecio()
-    finalRepetitivo()
-
 imprimirPrecio()
-
-finalRepetitivo()
 
 #Version Beta, proximamente: 
 #Expresar fecha y hora de la Crypto
